@@ -69,7 +69,6 @@ function App(props) {
     }
     return result
   }
-  console.log(social);
   return (
     <Router>
       <Notifications />

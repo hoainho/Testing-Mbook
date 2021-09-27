@@ -20,7 +20,6 @@ export default function DashboardUserTable(props) {
     useEffect(() => {
         requestAPI(`/account/getaccounts`, 'GET', null, { Authorization: `Bearer ${localStorage.getItem('TOKEN')}` })
             .then(res => {
-                console.log({ account: res.data });
                 setUser(res.data)
                 setConstUser(res.data)
             })
