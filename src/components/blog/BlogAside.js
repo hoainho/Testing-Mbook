@@ -133,7 +133,7 @@ export default function BlogAside(props) {
                                 <div className="blog__container-aside-wrapper-upload-content">
                                     <div className="blog__container-aside-wrapper-upload-content-box">
                                         <h3 className="blog__container-aside-wrapper-upload-content-box-title">Tiêu Đề</h3>
-                                        <input className="blog__container-aside-wrapper-upload-content-box-txt" onChange={handleChangePost} name="title" value={post.title} type="text" placeholder="Nhập tiêu đề bài viết ... " />
+                                        <input className="blog__container-aside-wrapper-upload-content-box-txt" onChange={handleChangePost} name="title" value={post.title} type="text" placeholder="Nhập tiêu đề bài viết ... " required />
                                         <span class="focus-border">
                                             <i></i>
                                         </span>
@@ -148,7 +148,7 @@ export default function BlogAside(props) {
 
                                     <div className="blog__container-aside-wrapper-upload-content-box">
                                         <h3 className="blog__container-aside-wrapper-upload-content-box-title">Phụ Đề</h3>
-                                        <input className="blog__container-aside-wrapper-upload-content-box-sub" onChange={handleChangePost} name="sub" value={post.sub} type="text" placeholder="Nhập phụ đề bài viết ... " />
+                                        <input className="blog__container-aside-wrapper-upload-content-box-sub" onChange={handleChangePost} name="sub" value={post.sub} type="text" placeholder="Nhập phụ đề bài viết ... " required />
                                         <span class="focus-border">
                                             <i></i>
                                         </span>

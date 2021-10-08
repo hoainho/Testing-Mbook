@@ -10,7 +10,7 @@ export default function BlogContainer(props) {
         requestAPI('/poster', 'GET')
             .then(res => {
                 if (res) {
-                    console.log({ post: res.data });
+                    console.log({ status: res.status });
                     setPostAPI(res.data)
                 }
             })
