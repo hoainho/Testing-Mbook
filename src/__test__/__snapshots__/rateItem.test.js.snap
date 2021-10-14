@@ -1,0 +1,691 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshoot testing react componsent So sánh 1 component 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Trần Hùng
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        31 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book1.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsent So sánh sự thay đổi của 1 component khi thay 1 đường dẫn  1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Trần Hùng
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        31 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book1.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsents So sánh component thứ 0 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Trần Hùng
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        31 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book1.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsents So sánh component thứ 1 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Hoài Nhớ
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        32 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book4.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsents So sánh component thứ 2 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Hoài Nhớ
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        33 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book2.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsents So sánh component thứ 3 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Hoài Nhớ
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        330 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book3.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsents So sánh component thứ 4 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar1.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Hoài Nhớ
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        301 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book1.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsents So sánh component thứ 5 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Hoài Nhớ
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        30 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book1.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsents So sánh component thứ 6 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Hoài Nhớ
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        30 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book1.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshoot testing react componsents So sánh component thứ 7 1`] = `
+<div
+  className="action__list rating"
+>
+  <div
+    className="action__list-avatar rating__avatar"
+  >
+    <img
+      className="action__list-avatar-image"
+      src="../assets/avatar.jpg"
+    />
+  </div>
+  <div
+    className="action__list-comments rating__content"
+  >
+    <div>
+      <h3
+        className="action__list-comments-name rating__content-title"
+      >
+        Hoài Nhớ
+      </h3>
+      <span
+        className="rating__content-date"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-clock-o pr-2"
+        />
+         
+        30 phút trước
+      </span>
+    </div>
+    <div
+      className="rating__content-container"
+    >
+      <div
+        className="rating__content-container-image"
+      >
+        <img
+          alt="image"
+          className="rating__content-container-image-pic"
+          src="../assets/book1.jpg"
+        />
+      </div>
+      <div>
+        <div
+          className="rating__content-container-decsription"
+        >
+          <h2
+            className="rating__content-container-decsription-title"
+          >
+            Anh Da Đen và những câu chuyện
+          </h2>
+          <p
+            className="rating__content-container-decsription-text"
+          >
+            that have a near-identical initial appearance for single, multiple, and disabled
+      select elements across the top browsers. A few properties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+      perties and techniques our
+      solution will use: clip-path to create the custom dropdown arrow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

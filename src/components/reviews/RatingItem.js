@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import classnames from 'classname';
 export default function RatingItem(props) {
-    const { avatarFriend, avatar, infomation } = props;
+    const {avatar= '', author_name= '',time= '', book= '',title= '',content= ''} = props
     const [like, setLike] = useState(false);
     const handleLikeReply = () => {
         let newValue = like;
@@ -16,29 +16,25 @@ export default function RatingItem(props) {
             </div>
             <div className="action__list-comments rating__content">
                 <div >
-                    <h3 className="action__list-comments-name rating__content-title">Anh Da Đen</h3>
+                    <h3 className="action__list-comments-name rating__content-title">{author_name}</h3>
                     <span className="rating__content-date">
-                        <i class="fa fa-clock-o pr-2" aria-hidden="true"></i> 30 phút trước
+                        <i class="fa fa-clock-o pr-2" aria-hidden="true"></i> {time}
                     </span>
                 </div>
                 <div className="rating__content-container">
                     <div className="rating__content-container-image">
-                        <img className="rating__content-container-image-pic" src={props.book} alt="image" />
+                        <img className="rating__content-container-image-pic" src={book} alt="image" />
                     </div>
                     <div>
                         <div className="rating__content-container-decsription">
                             <h2 className="rating__content-container-decsription-title">
-                                Anh Da Đen và những câu chuyện
+                                {title}
                             </h2>
                             <p className="rating__content-container-decsription-text">
-                                that have a near-identical initial appearance for single, multiple, and disabled
-                                select elements across the top browsers. A few properties and techniques our
-                                solution will use: clip-path to create the custom dropdown arrow.
-                                perties and techniques our
-                                solution will use: clip-path to create the custom dropdown arrow.
+                               {content}
                             </p>
-                            <Link to="/reviewsDetails"> Đọc tiếp</Link>
-
+                            {/* <Link to="/reviewsDetails"> Đọc tiếp</Link> */}
+                            {/* <a href="/reviewsDetails"> Đọc tiếp</a> */}
                         </div>
                     </div>
                 </div>

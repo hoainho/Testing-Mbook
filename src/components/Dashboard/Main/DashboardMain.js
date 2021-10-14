@@ -11,6 +11,7 @@ import DashboardTodoList from './DashboardTodoList'
 import DashboardChartPie from './DashboardChartPie'
 import DashboardChartLine from './DashboardChartLine'
 import requestAPI from '../../../api/index'
+import { accountApi } from '../../../api/accountApi'
 
 export default function DashboardMain() {
 
@@ -50,7 +51,8 @@ export default function DashboardMain() {
                     console.log('ERROR :' + err);
                 }
             })
-        requestAPI(`/account/getaccounts`, 'GET')
+        // requestAPI(`/account/getaccounts`, 'GET')
+            accountApi.get()
             .then(res => {
                 if (res) {
                     setUser(res.data)

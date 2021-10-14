@@ -15,6 +15,7 @@ import { updateAccount } from '../../features/account/accountSlice'
 import { Link } from 'react-router-dom'
 import notificationCustom from '../../notification';
 import requestAPI from '../../api';
+import { authApi } from '../../api/loginApi'
 const ENDPOINT = "http://localhost:3000";
 
 function Dashboard(props) {
@@ -107,7 +108,8 @@ function Dashboard(props) {
         if (!acc || !acc.username || !acc.password) {
             notificationCustom("Nhắc Nhở", "Vui lòng nhập đầy đủ các trường", "danger")
         } else if (acc) {
-            requestAPI('/account/signinDashboard', 'POST', acc)
+            // requestAPI('/account/dashboard/signin', 'POST', acc)
+            authApi.adminLogin(acc)
                 .then(res => {
                     setAdminAccount(res.data)
                     setIsLogin(false);

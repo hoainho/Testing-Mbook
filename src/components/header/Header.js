@@ -13,6 +13,7 @@ import requestAPI from '../../api';
 import { cartReceived } from '../../features/cart/CartSlice';
 import { useDispatch } from 'react-redux';
 import { login, register, logout, changePassword } from '../../features/account/accountSlice';
+import { authApi } from '../../api/loginApi';
 // Alternate way to use classes without prefix like `animated fadeIn`
 const getStorageTheme = () => {
     let theme = 'light-theme';
@@ -94,19 +95,21 @@ export default function Navbar(props) {
         if (!acc || !acc.username || !acc.password) {
             notificationCustom("Nhắc Nhở", "Vui lòng nhập đầy đủ các trường", "danger")
         } else if (acc) {
-            requestAPI('/account/signin', 'POST', acc)
+            // requestAPI('/account/signin', 'POST', acc)
+            authApi.userLogin(acc)
                 .then(res => {
-                    setAPIAccount(res.data);
+                    console.log(res)
+                    setAPIAccount(res.data.data);
                     setConfirmLogin(true);
                     setIsLogin(false);
-                    notificationCustom("Thông Báo", `Xin Chào, ${res.data.fullname}`, "success")
+                    notificationCustom("Thông Báo", `Xin Chào, ${res.data.data.fullname}`, "success")
                     localStorage.setItem('TOKEN', res.data.accessToken)
-                    localStorage.setItem('USERNAME', res.data.fullname)
+                    localStorage.setItem('USERNAME', res.data.data.fullname)
                     window.location.reload();
                 })
                 .catch(err => {
                     if (err.response) {
-                        if (err.response.status === 500) {
+                        if (err.response.status === 400) {
                             notificationCustom("Nhắc Nhở", `Sai tài khoản hoặc mật khẩu`, "warning")
                         }
                         else if (err.response.status === 304) {
