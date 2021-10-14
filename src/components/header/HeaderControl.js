@@ -10,7 +10,7 @@ export default function HeaderControl(props) {
     const [fullNameDisplay, setFullNameDisplay] = useState()
     const [changePassword, setChangePassword] = useState({ passwordOld: '', passwordNew: '', repeatpasswordNew: '' })
     const [accountRegister, setAccountregister] = useState(
-        { fullname: '', username: '', password: '', repeatpassword: '', roleid: false, status: false });
+        { fullname: '', username: '', password: '', repeatpassword: '', roleid: false, status: true });
     const [ckbRule, setCkbRule] = useState(false)
     const handleIsLogin = props.handleIsLogin
     const isChangePassword = props.isChangePassword

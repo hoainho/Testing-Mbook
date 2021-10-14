@@ -1,5 +1,26 @@
-import 'babel-polyfill'
-import Users from './users';
+import "babel-polyfill";
+import { mockDataUsers } from "./mock";
+import { handleLogin } from "./users";
+// jest.mock('axios');
+
+describe("LOGIN", () => {
+ 
+  const mockData = jest.fn(()=>mockDataUsers)
+
+  for (let elm of mockData()) {
+    test(elm.case, async () => {
+      const acc = {
+        username: elm.username,
+        password: elm.password,
+      };
+
+      expect(acc.username).not.toBeNull();
+      expect(acc.password).not.toBeNull();
+
+      expect(await handleLogin(acc)).toEqual(elm.result);
+    });
+  }
+});
 
 // APIT TESTING
 // describe('LOGIN', () => {
@@ -58,67 +79,82 @@ import Users from './users';
 
 // })
 
-describe('LOGIN', () => {
-    const user = new Users();
-    const valueBoard = [
-        { case: 'Username VALID && Password VALID', username: 'admin', password: 'Matkhau1', result: 'Login successfully' },
-        { case: 'Username is null && Password is null', username: '', password: '', result: 'Username or Password INVALID' },
-        { case: 'Username VALID && Password is null', username: 'admin', password: '', result: 'Username or Password INVALID' },
-        { case: 'Username is null && Password VALID', username: '', password: 'Matkhau1', result: 'Username or Password INVALID' },
-        { case: 'Username INVALID && Password INVALID with space', username: '     ', password: '      ', result: 'Username or Password INVALID' },
-        { case: 'Username VALID && Password VALID', username: 'adm in', password: 'Mat khau1', result: 'Username or Password INVALID' },
-        { case: 'Account login FAILD with case LENGTH INVALID', username: 'ad', password: '1', result: 'Username or Password INVALID' },
-        { case: 'Username INVALID && Password INVALID with symbox', username: '!32$%@  **', password: '()1#~~4)', result: 'Username or Password INVALID' },
-    ]
-    valueBoard.map(item => (
-        it(item.case, async () => {
-            const account = { username: item.username, password: item.password }
-            const res = await user.signin(account);
-            expect(res).toBe(item.result)
-        })))
-    // //---CASE ( Username is null && Password is null )
-    // it('Username is null && Password is null', async () => {
-    //     const account = { username: '', password: '' }
-    //     const res = await user.signin(account);
-    //     expect(res).toBe('Username is valid')
-    // });
-    // //---CASE ( Username invalid && Password is null )
-    // it(' Username invalid && Password is null', async () => {
-    //     const account = { username: 'admin', password: '' }
-    //     const res = await user.signin(account);
+// const user = new Users();
 
-    //     expect(res).toBe('Password is valid')
-    // });
-    // //---CASE ( Username is null && Password invalid )
-    // it('Username is null && Password invalid', async () => {
-    //     const account = { username: '', password: 'Matkhau1' }
-    //     const res = await user.signin(account);
-    //     expect(res).toBe('Username is valid')
-    // });
-    // //---CASE (1) ( Username is valid && Password is valid )
-    // it('Username is valid && Password is valid', async () => {
-    //     const account = { username: '      ', password: '     ' }
-    //     const res = await user.signin(account);
-    //     expect(res).toBe('Username is valid')
-    // });
-    // //---CASE (2) ( Username is valid && Password is valid )
-    // it('Username is valid && Password is valid', async () => {
-    //     const account = { username: '   $123.^^   ', password: '  @###33   ' }
-    //     const res = await user.signin(account);
-    //     expect(res).toBe('Username and Password is valid')
-    // });
-    // //---CASE (3) ( Username is valid && Password is valid )
-    // it('Username is valid && Password is valid', async () => {
-    //     const account = { username: 'ad min', password: 'Mathau 123' }
-    //     const res = await user.signin(account);
-    //     expect(res).toBe('Username and Password is valid')
-    // });
-    // //---CASE (4) (Length Username is valid  && Length Password is valid )
-    // it('Length Password is valid', async () => {
-    //     const account = { username: 'admin', password: '1' }
-    //     const res = await user.signin(account);
-    //     expect(res).toBe('Length Password is valid')
-    // });
-})
+// valueBoard.map(item => (
+//     it(item.case, async () => {
+//         const account = { username: item.username, password: item.password }
+//         const res = await user.signin(account);
+//         expect(res).toBe(item.result)
+//     })))
+//---CASE ( Username is null && Password is null )
+// it('Username is null && Password is null', async () => {
+//     const account = { username: '', password: '' }
+//     const res = await user.signin(account);
+//     expect(res).toBe('Username is valid')
+// });
 
+// for(let elm of mockDataLogin){
+//     test(elm.case, async() => {
+//         expect(() => handleLogin({username: elm.username, password: elm.password})).toThrow(elm.result)
+//     })
+// }
 
+// test('Username or Password INVALID', async () => {
+//     expect(()=>handleLogin({username: '', password: ''})).toThrow('Username or Password INVALID')
+// });
+
+// test(' Username invalid && Password is null', async () => {
+
+//     const acc = {
+//         username: mockDataLogin[1].username,
+//         password: mockDataLogin[1].password
+//     }
+
+//     expect( acc.username).not.toBeNull()
+//     expect(acc.password).not.toBeNull()
+
+//      });
+// test(' Username invalid && Password is null', async () => {
+
+//     const acc = {
+//         username: mockDataLogin[0].username,
+//         password: mockDataLogin[0].password
+//     }
+
+//     expect(acc.username).not.toBeNull()
+//     expect(acc.password).not.toBeNull()
+
+//     expect(await handleLogin(acc)).toEqual('Login successfully')
+// });
+
+// //---CASE ( Username is null && Password invalid )
+// it('Username is null && Password invalid', async () => {
+//     const account = { username: '', password: 'Matkhau1' }
+//     const res = await user.signin(account);
+//     expect(res).toBe('Username is valid')
+// });
+// //---CASE (1) ( Username is valid && Password is valid )
+// it('Username is valid && Password is valid', async () => {
+//     const account = { username: '      ', password: '     ' }
+//     const res = await user.signin(account);
+//     expect(res).toBe('Username is valid')
+// });
+// //---CASE (2) ( Username is valid && Password is valid )
+// it('Username is valid && Password is valid', async () => {
+//     const account = { username: '   $123.^^   ', password: '  @###33   ' }
+//     const res = await user.signin(account);
+//     expect(res).toBe('Username and Password is valid')
+// });
+// //---CASE (3) ( Username is valid && Password is valid )
+// it('Username is valid && Password is valid', async () => {
+//     const account = { username: 'ad min', password: 'Mathau 123' }
+//     const res = await user.signin(account);
+//     expect(res).toBe('Username and Password is valid')
+// });
+// //---CASE (4) (Length Username is valid  && Length Password is valid )
+// it('Length Password is valid', async () => {
+//     const account = { username: 'admin', password: '1' }
+//     const res = await user.signin(account);
+//     expect(res).toBe('Length Password is valid')
+// });

@@ -9,6 +9,7 @@ import requestAPI from '../../../api/index'
 import { viewDetails } from '../../../features/account/accountSlice';
 import { useDispatch } from 'react-redux';
 import notificationCustom from '../../../notification/index';
+import { accountApi } from '../../../api/accountApi';
 
 export default function DashboardUserTable(props) {
     const [status, setStatus] = useState(false)
@@ -18,7 +19,8 @@ export default function DashboardUserTable(props) {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        requestAPI(`/account/getaccounts`, 'GET', null, { Authorization: `Bearer ${localStorage.getItem('TOKEN')}` })
+        // requestAPI(`/account/getaccounts`, 'GET', null, { Authorization: `Bearer ${localStorage.getItem('TOKEN')}` })
+        accountApi.get()
             .then(res => {
                 setUser(res.data)
                 setConstUser(res.data)
